@@ -30,9 +30,9 @@ class _AlcoolGasolinaState extends State<AlcoolGasolina> {
 
   void calculaPreco(precoAlcool, precoGasolina) {
     if ((precoAlcool / precoGasolina) >= 0.7) {
-      changeResultado("Abasteça com Gasolina.");
+      changeResultado("Vai de gasolina mesmo.");
     } else {
-      changeResultado("Abasteça com Álcool.");
+      changeResultado("ÁLCOOL É MELHOR!");
     }
   }
 
@@ -45,7 +45,7 @@ class _AlcoolGasolinaState extends State<AlcoolGasolina> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Álcool ou Gasolina"),
+        title: Text("Álcool é melhor?"),
         backgroundColor: Colors.blue,
       ),
       body: Container(
